@@ -93,6 +93,7 @@ body {
     align-content: space-between;
     flex-direction: row;
     text-align: center;
+
 }
 button:not(:disabled){
     cursor: pointer;
@@ -239,7 +240,7 @@ button:not(:disabled){
     height: 0;
     margin: 30px 0 20px 20px;
     background: radial-gradient(circle, var(--footer), var(--footer));
-    border-radius: 50%;
+    border-radius: 10%;
     transition: 0.1s ease;
 }
 
@@ -264,9 +265,9 @@ button:not(:disabled){
 }
 
 .change-bg {
-    width: 520px;
-    height: 460px;
-    transform: translate(40%,-30%);
+    width: 60%;
+    height: 50%;
+    transform: translate(0,-20%);
 }
 #moon_btn_hamburger {
     border: none;

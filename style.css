@@ -127,8 +127,16 @@ button:not(:disabled){
 .links a:hover {
     text-decoration-color: var(--NOColor);
 }
+#main_link {
+    padding-left: 1.3em;
+    margin-left: 2em;
+}
+
 .icons {
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+
 }
 .icon {
     filter: invert(var(--invert));
@@ -226,6 +234,11 @@ button:not(:disabled){
 
 .nav li a:hover {
     font-weight: bold;
+}
+
+.nav li button {
+    margin: 0;
+    padding-left: 0;
 }
 
 .menu-bg, #menu {

@@ -278,7 +278,7 @@ button:not(:disabled){
 }
 
 .change-bg {
-    width: 60%;
+    width: 20%;
     height: 50%;
     transform: translate(0,-20%);
 }
@@ -410,9 +410,15 @@ button:not(:disabled){
     #logo_and_copyright {flex-basis: 10%}
     #socials {font-size: 12px; word-break: break-word; flex-grow: 1}
     #socials li {margin: 0 0 0.5em 0}
-    #socials ul {padding-left: 1em}
+    #socials ul {padding-left: 0.4em}
     .cover_text p {font-size: 25px;}
     #gradient_buttn p {font-size: 14px}
+    #foot_content {padding: 0 1%;}
+    .menu-bg, #menu {top: 1em}
+    .change-bg {width: 60%}
+}
+@media (max-width: 361px) {
+    .change-bg {width: 65%}
 }
 @media (min-width: 480px) and (max-width: 600px) {
     .footer {font-size: 12px}
@@ -422,7 +428,31 @@ button:not(:disabled){
     #copyright {font-size: 10px}
     #socials ul {padding-left: 2em}
     .cover_text p {font-size: 30px;}
+    .menu-bg, #menu {top: 2em}
+    .change-bg {width: 45%;}
 }
 @media (min-width: 600px) and (max-width: 1200px) {
     .cover_text p {font-size: 40px}
+    .menu-bg, #menu {top: 2.5em}
+}
+@media (min-width: 1155px) and (max-width: 1200px) {
+    .change-bg {width: 20%;}
+}
+@media (min-width: 1000px) and (max-width: 1155px) {
+    .change-bg {width: 22%;}
+}
+@media (min-width: 900px) and (max-width: 1000px){
+    .change-bg {width: 25%;}
+}
+@media (min-width: 800px) and (max-width: 900px){
+    .change-bg {width: 30%;}
+}
+@media (min-width: 700px) and (max-width: 800px){
+    .change-bg {width: 35%;}
+}
+@media (min-width: 600px) and (max-width: 700px){
+    .change-bg {width: 40%;}
+}
+@media (min-height: 700px) {
+    .change-bg {height: 40%}
 }

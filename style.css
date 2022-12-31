@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --whitebg: 255, 255, 255;
+    --footerb: #2F3136;
+    --foterw: #D0D0D0;
+    --mainbg: 28, 28, 32;
+    --white: #FFFFFF;
+    --main: #000000;
+    --mainbghtml: #1c1c20;
+    --whiteOp: rgba(255, 255, 255, 0);
+    --whiteNOp: rgba(255, 255, 255, 1);
+    --mainOp: rgba(28, 28, 32, 0);
+    --mainNOp: rgba(28, 28, 32, 1);
+    --whiteOpasity: 0.1;
+    --mainOpasity: 0.7;
+}
+.dark-theme {
+    --bg: var(--mainbg);
+    --color: var(--white);
+    --footer: var(--footerb);
+    --OColor: var(--whiteOp);
+    --NOColor: var(--whiteNOp);
+    --invert: 100;
+    --colorHtml: var(--mainbghtml);
+    --bgOpasity: var(--mainOpasity);
+    --menuColor: var(--main);
+}
+.light-theme {
+    --bg: var(--whitebg);
+    --color: var(--main);
+    --footer: var(--foterw);
+    --OColor: var(--mainOp);
+    --NOColor: var(--mainNOp);
+    --invert: 0;
+    --colorHtml: var(--white);
+    --bgOpasity: var(--whiteOpasity);
+    --menuColor: var(--white)
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--colorHtml);
+    transition: 1s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*block with picture*/
+.box {
+    opacity: 0;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1423px;
+    min-width: 375px;
+    background-image: url("assets/cover2xV4.png");
+    background-position: center;
+    background-size: cover;
+    transition: .9s opacity cubic-bezier(0.87, 0, 0.13, 1);
+}
+/*animations*/
+.visible {
+    opacity: 100%;
+}
+@keyframes moveDown {
+    from {padding-top: 0}
+    to {padding-top: 5%}
+}
+@keyframes moveUp {
+    from {padding-top: 10%}
+    to {padding-top: 0}
+}
+.outgoing_down {
+    animation: moveDown 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.outgoing_up {
+    animation: moveUp 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+
+/*main content*/
+.content {
+    padding: 0 5%;
+}
+/*header*/
+.header {
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: row;
+    text-align: center;
+}
+button:not(:disabled){
+    cursor: pointer;
+}
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    background: linear-gradient(33deg, #94c7fe, #e08af9 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    color: #94c7fe;
+    flex-grow: 1;
+}
+.dop_logo {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color);
+}
+.links a {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color); !important;
+    text-decoration: underline 0.09em var(--OColor);
+    text-underline-offset: 0.3em;
+    padding-left: 1.2em;
+    padding-right: 1.38em;
+    margin: 0;
+    transition: text-decoration-color 300ms ;
+}
+.links a:hover {
+    text-decoration-color: var(--NOColor);
+}
+.icons {
+    flex-grow: 1;
+}
+.icon {
+    filter: invert(var(--invert));
+    margin: 1em;
+}
+.icons button {
+    border: none;
+    background: transparent;
+
+}
+.icon svg {
+    width: 2.7em;
+    height: 2.7em;
+    scale: 100%;
+    transition: scale ease-in-out 300ms;
+}
+.icon svg:hover {
+    scale: 70%;
+}
+.icon svg:active {
+    scale: 100%;
+}
+#moon {
+    width: 2.4em;
+    height: 2.4em;
+}
+
+#ava {
+    width: 3em;
+    height: 3em;
+}
+.icons a {
+    text-decoration: none;
+}
+.logo_div {
+    text-align: center;
+}
+.sticky {
+    max-width: 1423px;
+    padding: 0;
+    position: sticky;
+    top:0;
+    /*width: 100%;*/
+}
+
+/*Hamburger*/
+#menu {
+    z-index: 2;
+    display: none;
+}
+#menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 20px 20px 0;
+    cursor: pointer;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    background-color: var(--color);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+.nav {
+    transition: 0.5s ease;
+    display: none;
+}
+
+.nav ul {
+    padding: 0 22px;
+    text-align: left;
+}
+
+.nav li {
+    list-style: none;
+    padding: 0.5em 0;
+}
+
+.nav li a {
+    color: var(--color);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.menu-bg, #menu {
+    top: 3em;
+    right: 0;
+    position: absolute;
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, var(--footer), var(--footer));
+    border-radius: 50%;
+    transition: 0.1s ease;
+}
+
+.change {
+    display: block;
+}
+
+.change .bar {
+    background-color: var(--color);
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(40%,-30%);
+}
+#moon_btn_hamburger {
+    border: none;
+    background: transparent;
+
+}
+
+/*block with text and btn */
+.cover_text {
+    /*background-color: rgba(28, 28, 32, 0.7);*/
+    max-height: 1300px;
+    box-sizing: border-box;
+    padding-bottom: 20em;
+}
+.cover_text p {
+    font-size: 50px;
+    color: var(--color);
+    font-weight: 600;
+    padding-right: 35%;
+}
+.cover_text p span {
+    background: linear-gradient(33deg, #94c7fe, #e08af9 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #94c7fe;
+}
+#gradient_buttn {
+    position: relative;
+    background: linear-gradient(140deg, #94c7fe, #e08af9 );
+    border-radius: 23px;
+    text-align: center;
+    scale: 100%;
+    transition: scale ease-in-out 300ms;
+    border-width: 0;
+}
+
+#gradient_buttn p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color);
+    padding: 0.7em;
+}
+#gradient_buttn:hover {
+    scale: 85%;
+}
+#gradient_buttn:active {
+    scale: 100%;
+}
+
+/*additional block for pressing the footer */
+.info {
+    flex-grow: 1;
+    max-width: 100%;
+}
+/*footer*/
+.footer {
+    background-color: var(--footer);
+    width: 100%;
+    min-width: 375px;
+    opacity: 0;
+    transition: .9s opacity cubic-bezier(0.87, 0, 0.13, 1), background-color 1s;
+    /*position: sticky;*/
+    /*bottom: 0;*/
+}
+.visible_footer {
+    opacity: 100%;
+}
+#foot_content {
+    max-width: 1423px;
+    /*min-width: 780px;*/
+    margin: auto;
+    padding: 0 5%;
+    display: flex;
+
+    /*display: flex;*/
+    /*align-content: center;*/
+    /*padding-right: 80%;*/
+    text-align: center;
+
+}
+#logo_and_copyright {
+    box-sizing: content-box;
+    color: var(--color);
+    text-align: center;
+    /*padding-right: 50%;*/
+}
+#logo_and_copyright p {
+    text-align: left;
+    padding-left: 0;
+    margin: 0;
+}
+#copyright {
+    font-size: 12px;
+    color: var(--color);
+    font-weight: lighter;
+}
+
+#socials {
+    display: flex;
+    font-size: 16px;
+    text-align: left;
+
+}
+#socials li {
+    list-style-type: none;
+}
+#socials a {
+    color: var(--color) !important;
+    text-decoration: none;
+}
+#socials a:hover {
+    text-decoration: underline;
+}
+
+/*adaptability */
+@media (max-width: 1277px) {
+    .links {display: none}
+    .icons {display: none}
+    #menu {display: block}
+    .box {background-position: center center; background-repeat: no-repeat; margin: 0}
+}
+@media (max-width: 480px) {
+    #logo_and_copyright p {word-break: break-word; font-size: 8px}
+    #copyright {font-size: 5px;}
+    #logo_and_copyright .logo {font-size: 15px}
+    #logo_and_copyright {flex-basis: 10%}
+    #socials {font-size: 12px; word-break: break-word; flex-grow: 1}
+    #socials li {margin: 0 0 0.5em 0}
+    #socials ul {padding-left: 1em}
+    .cover_text p {font-size: 25px;}
+    #gradient_buttn p {font-size: 14px}
+}
+@media (min-width: 480px) and (max-width: 600px) {
+    .footer {font-size: 12px}
+    #socials {font-size: 14px; word-break: break-word}
+    #logo_and_copyright .logo {font-size: 20px}
+    #logo_and_copyright {flex-basis: 20%}
+    #copyright {font-size: 10px}
+    #socials ul {padding-left: 2em}
+    .cover_text p {font-size: 30px;}
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+    .cover_text p {font-size: 40px}
+}

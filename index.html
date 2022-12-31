@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Memories bot</title>
+    <script src="snow/snowstorm-min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body class="dark-theme">
+<div class="box" id="box">
+    <div class="base" id="base">
+        <div class="content">
+            <div class="header" id="fixed_header">
+                <div class="logo_div">
+                    <span class="logo">
+                    Memories
+                </span>
+                    <span class="dop_logo">
+                    Discord помощник
+                </span>
+                </div>
+                <div class="links">
+                    <a href="#">Главная</a>
+                    <a href="https://s1rok1.gitbook.io/memories/">Документация</a>
+                    <a href="https://discord.gg/JE2XQJ4Jan">Поддержка</a>
+                    <a href="https://boosty.to/memories">Поддержите нас</a>
+                </div>
+                <div class="icons">
+                    <a  href="https://discord.gg/JE2XQJ4Jan" class="icon" >
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512.000000 512.000000"
+                             preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                               fill="#000000" stroke="none">
+                            <path d="M1665 4476 c-269 -59 -526 -141 -765 -241 -129 -55 -121 -46 -253
+                            -267 -470 -783 -681 -1599 -637 -2466 6 -120 13 -224 15 -232 6 -18 297 -213
+                            424 -285 131 -74 344 -178 476 -233 159 -67 387 -144 395 -135 61 71 260 400
+                            260 431 0 5 -30 22 -67 37 -126 52 -343 166 -343 180 0 8 20 30 45 50 l45 37
+                            122 -50 c790 -323 1594 -319 2376 10 51 21 98 36 105 32 35 -21 87 -67 87 -79
+                            0 -13 -211 -124 -325 -170 -38 -16 -75 -33 -82 -39 -9 -8 3 -38 53 -125 62
+                            -108 200 -321 208 -321 13 0 261 90 366 132 255 103 579 279 807 437 56 39
+                            107 79 112 89 5 10 15 117 21 238 36 749 -112 1450 -451 2125 -86 172 -179
+                            334 -270 470 l-58 86 -128 53 c-299 123 -589 209 -891 264 l-32 6 -67 -138
+                            c-36 -75 -67 -138 -67 -138 -1 -1 -46 4 -101 12 -286 38 -684 38 -970 0 -55
+                            -8 -100 -13 -100 -12 -16 45 -140 276 -148 275 -7 0 -79 -15 -162 -33z m1934
+                            -1636 c121 -57 227 -195 262 -340 19 -81 14 -222 -10 -300 -44 -141 -136 -251
+                            -258 -312 -64 -31 -73 -33 -178 -33 -108 0 -113 1 -187 38 -345 170 -374 696
+                            -51 919 119 81 283 92 422 28z m-1703 1 c123 -61 215 -175 258 -320 20 -69 21
+                            -227 1 -301 -39 -146 -137 -271 -261 -331 -66 -32 -75 -34 -179 -34 -103 0
+                            -114 2 -178 32 -95 45 -178 127 -226 224 -51 101 -65 170 -58 289 8 158 80
+                            304 191 388 101 77 152 93 282 90 91 -3 107 -7 170 -37z"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <button role="button" class="icon" id="moon_btn">
+                        <svg id="moon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                             width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                             preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                               fill="#000000" stroke="none">
+                            <path d="M1810 5071 c-509 -169 -902 -442 -1265 -878 -61 -74 -198 -291 -259
+                            -413 -140 -274 -229 -565 -267 -870 -20 -156 -17 -508 5 -655 84 -578 326
+                            -1066 729 -1474 405 -409 910 -662 1492 -747 144 -21 499 -24 645 -5 749 95
+                            1402 486 1826 1091 113 161 218 359 289 542 46 119 115 352 115 390 0 42 -36
+                            106 -73 128 -80 49 -141 36 -260 -54 -326 -249 -663 -378 -1063 -406 -156 -12
+                            -231 -9 -404 16 -754 109 -1373 659 -1576 1402 -84 309 -86 670 -4 986 67 260
+                            148 425 345 704 53 75 60 128 23 194 -52 91 -131 105 -298 49z"/>
+                            </g>
+                        </svg>
+                    </button>
+                    <a href="#">
+                        <img src="assets/ava2xV2.png" alt="Memories_ava" id="ava">
+        <!--                <span>soon</span>-->
+                    </a>
+                </div>
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                        <ul>
+                            <li><a href="#">Документация</a></li>
+                            <li><a href="#">Поддержка</a></li>
+                            <li><a href="#">Поддержите нас</a></li>
+                            <li><button role="button" class="icon" id="moon_btn_hamburger">
+                                <svg id="moon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                     width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                     preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                       fill="#000000" stroke="none">
+                                        <path d="M1810 5071 c-509 -169 -902 -442 -1265 -878 -61 -74 -198 -291 -259
+                            -413 -140 -274 -229 -565 -267 -870 -20 -156 -17 -508 5 -655 84 -578 326
+                            -1066 729 -1474 405 -409 910 -662 1492 -747 144 -21 499 -24 645 -5 749 95
+                            1402 486 1826 1091 113 161 218 359 289 542 46 119 115 352 115 390 0 42 -36
+                            106 -73 128 -80 49 -141 36 -260 -54 -326 -249 -663 -378 -1063 -406 -156 -12
+                            -231 -9 -404 16 -754 109 -1373 659 -1576 1402 -84 309 -86 670 -4 986 67 260
+                            148 425 345 704 53 75 60 128 23 194 -52 91 -131 105 -298 49z"/>
+                                    </g>
+                                </svg>
+                            </button></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="menu-bg" id="menu-bg"></div>
+            </div>
+            <div class="backgroundImage">
+                <div class="cover_text" id="cover_text">
+                    <p>Отличный <span>discord</span> помощник для вашего сервера</p>
+                    <button role="link" id="gradient_buttn">
+                        <p>Добавить в дискорд</p>
+                    </button>
+                </div>
+            </div>
+            <div class="info">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer" id="footer">
+    <div id="foot_content">
+        <div id="logo_and_copyright">
+            <div class="logo_div" id="footer_logo">
+                <div class="logo">
+                    Memories
+                </div>
+            </div>
+            <p>Мы не являемся официальными представителями Discord</p>
+            <p id="copyright">&copy; 2021 — sirok1 | Все права защищены</p>
+        </div>
+        <div id="socials">
+            <div>
+                <ul>
+                    <li><a href="https://discord.gg/JE2XQJ4Jan">Сервер поддержки</a></li>
+                    <li><a href="https://s1rok1.gitbook.io/memories/">Документация</a></li>
+                    <li><a href="https://boosty.to/memories">Поддержи нас на Boosty</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                <li><a href="https://s1rok1.gitbook.io/memories/dopolnitelnaya-informaciya/usloviya-obsluzhivaniya-terms-of-service">Условия использования</a></li>
+                <li><a href="https://s1rok1.gitbook.io/memories/dopolnitelnaya-informaciya/politika-konfidencialnosti-privacy-policy">Конфиденциальность</a></li>
+                <li><a href="https://github.com/sirok1">Я на  Github</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -26,10 +26,10 @@
                 </span>
                 </div>
                 <div class="links">
-                    <a id="main_link" href="#">Главная</a>
+                    <a id="main_link" onclick="back_main()">Главная</a>
                     <a href="https://s1rok1.gitbook.io/memories/">Документация</a>
                     <a href="https://discord.gg/JE2XQJ4Jan">Поддержка</a>
-                    <a href="https://boosty.to/memories">Поддержите нас</a>
+                    <a href="https://boosty.to/memories">Помоги нам</a>
                 </div>
                 <div class="icons">
                     <a  href="https://discord.gg/JE2XQJ4Jan" class="icon" >
@@ -112,18 +112,89 @@
 
                 <div class="menu-bg" id="menu-bg"></div>
             </div>
-            <div class="backgroundImage">
+            <div class="main_content">
                 <div class="cover_text" id="cover_text">
                     <p>Отличный <span>discord</span> помощник для вашего сервера</p>
                     <button role="link" id="gradient_buttn">
                         <p>Добавить в дискорд</p>
                     </button>
                 </div>
-            </div>
-            <div class="info">
 
+                <div class="terms_of_service">
+                    <h1>Условия обслуживания/Terms of service</h1>
+                    <p>Дата последнего обновления и вступления в силу: 29 Июня 2022 года./This document was last updated on June 29, 2022</p>
+                    <h2>Terms and conditions</h2>
+                    <p>These terms and conditions (“Agreement”) set forth the general terms and conditions of your use of the “discord bot "Memories"” application (“Application” or “Service”) and any of its related products and services (collectively, “Services”). This Agreement is legally binding between you (“User”, “you” or “your”) and this Application developer (“Operator”, “we”, “us” or “our”). If you are entering into this agreement on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to this agreement, in which case the terms “User”, “you” or “your” shall refer to such entity. If you do not have such authority, or if you do not agree with the terms of this agreement, you must not accept this agreement and may not access and use the Application and Services. By accessing and using the Application and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement. You acknowledge that this Agreement is a contract between you and the Operator, even though it is electronic and is not physically signed by you, and it governs your use of the Application and Services.</p>
+                    <h2>Adult content</h2>
+                    <p>Please be aware that there may be certain adult or mature content available in the Application. A warning will be shown to the User prior to adult content being displayed. Where there is mature or adult content, individuals who are less than 18 years of age or are not permitted to access such content under the laws of any applicable jurisdiction may not access such content. If we learn that anyone under the age of 18 seeks to conduct a transaction through the Services, we will require verified parental consent, in accordance with the Children’s Online Privacy Protection Act of 1998 (“COPPA”). Certain areas of the Application and Services may not be available to children under 18 under any circumstances.</p>
+                    <h2>Links to other resources</h2>
+                    <p>Although the Application and Services may link to other resources (such as websites, applications, etc.), we are not, directly or indirectly, implying any approval, association, sponsorship, endorsement, or affiliation with any linked resource, unless specifically stated herein. We are not responsible for examining or evaluating, and we do not warrant the offerings of, any businesses or individuals or the content of their resources. We do not assume any responsibility or liability for the actions, products, services, and content of any other third parties. You should carefully review the legal statements and other conditions of use of any resource which you access through a link in the Application. Your linking to any other off-site resources is at your own risk.</p>
+                    <h2>Prohibited uses</h2>
+                    <p>In addition to other terms as set forth in the Agreement, you are prohibited from using the Application and Services or Content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or operation of the Application and Services, third party products and services, or the Internet; (h) to spam, phish, pharm, pretext, spider, crawl, or scrape; (i) for any obscene or immoral purpose; or (j) to interfere with or circumvent the security features of the Application and Services, third party products and services, or the Internet. We reserve the right to terminate your use of the Application and Services for violating any of the prohibited uses.</p>
+                    <h2>Intellectual property rights</h2>
+                    <p>“Intellectual Property Rights” means all present and future rights conferred by statute, common law or equity in or in relation to any copyright and related rights, trademarks, designs, patents, inventions, goodwill and the right to sue for passing off, rights to inventions, rights to use, and all other intellectual property rights, in each case whether registered or unregistered and including all applications and rights to apply for and be granted, rights to claim priority from, such rights and all similar or equivalent rights or forms of protection and any other results of intellectual activity which subsist or will subsist now or in the future in any part of the world. This Agreement does not transfer to you any intellectual property owned by the Operator or third parties, and all rights, titles, and interests in and to such property will remain (as between the parties) solely with the Operator. All trademarks, service marks, graphics and logos used in connection with the Application and Services, are trademarks or registered trademarks of the Operator or its licensors. Other trademarks, service marks, graphics and logos used in connection with the Application and Services may be the trademarks of other third parties. Your use of the Application and Services grants you no right or license to reproduce or otherwise use any of the Operator or third party trademarks.</p>
+                    <h2>Limitation of liability</h2>
+                    <p>To the fullest extent permitted by applicable law, in no event will the Operator, its affiliates, directors, officers, employees, agents, suppliers or licensors be liable to any person for any indirect, incidental, special, punitive, cover or consequential damages (including, without limitation, damages for lost profits, revenue, sales, goodwill, use of content, impact on business, business interruption, loss of anticipated savings, loss of business opportunity) however caused, under any theory of liability, including, without limitation, contract, tort, warranty, breach of statutory duty, negligence or otherwise, even if the liable party has been advised as to the possibility of such damages or could have foreseen such damages. To the maximum extent permitted by applicable law, the aggregate liability of the Operator and its affiliates, officers, employees, agents, suppliers and licensors relating to the services will be limited to an amount no greater than one dollar or any amounts actually paid in cash by you to the Operator for the prior one month period prior to the first event or occurrence giving rise to such liability. The limitations and exclusions also apply if this remedy does not fully compensate you for any losses or fails of its essential purpose.</p>
+                    <h2>Severability</h2>
+                    <p>All rights and restrictions contained in this Agreement may be exercised and shall be applicable and binding only to the extent that they do not violate any applicable laws and are intended to be limited to the extent necessary so that they will not render this Agreement illegal, invalid or unenforceable. If any provision or portion of any provision of this Agreement shall be held to be illegal, invalid or unenforceable by a court of competent jurisdiction, it is the intention of the parties that the remaining provisions or portions thereof shall constitute their agreement with respect to the subject matter hereof, and all such remaining provisions or portions thereof shall remain in full force and effect.</p>
+                    <h2>Changes and amendments</h2>
+                    <p>We reserve the right to modify this Agreement or its terms related to the Application and Services at any time at our discretion. When we do, we will revise the updated date at the bottom of this page. We may also provide notice to you in other ways at our discretion, such as through the contact information you have provided.</p>
+                    <p>An updated version of this Agreement will be effective immediately upon the posting of the revised Agreement unless otherwise specified. Your continued use of the Application and Services after the effective date of the revised Agreement (or such other act specified at that time) will constitute your consent to those changes.</p>
+                    <h2>Acceptance of these terms</h2>
+                    <p>You acknowledge that you have read this Agreement and agree to all its terms and conditions. By accessing and using the Application and Services you agree to be bound by this Agreement. If you do not agree to abide by the terms of this Agreement, you are not authorized to access or use the Application and Services. </p>
+                    <h2>Contacting us</h2>
+                    <p>If you have any questions, concerns, or complaints regarding this Agreement, we encourage you to contact us using the details below:</p>
+                    <a href="mailto:s1r0k.dev@gmail.com">s1r0k.dev@gmail.com</a>
+                    <br>
+                    <br>
+                </div>
+                <div class="privacy">
+                    <h1>Политика конфиденциальности/Privacy policy</h1>
+                    <p>Дата последнего обновления и вступления в силу: 29 Июня 2022 года./This document was last updated on June 29, 2022</p>
+                    <p>Добавляя бота Memories на свой сервер или находясь на сервере, где находится бот Memories вы соглашаетесь и принимаете политику конфиденциальности описанную в этом документе.</p>
+                    <h2>Безопасность хранимых данных</h2>
+                    <p>Все хранимые нами данные зашифрованы и защищены. Защита базы данных также соответствует современным критериям защиты. Однако мы не можем гарантировать 100% защиту.</p>
+                    <h2>Для чего нам нужны эти данные?</h2>
+                    <p>Наш бот имеет несколько функции, которые позволяют настраивать бота для каждого сервера, чтобы определить на каком сервере, какие настройки необходимо применять, бот хранит идентификатор сервера в качестве первичного ключа, что позволяет связать все данные, необходимые для работы всех функций. Также мы храним идентификаторы некоторых ролей, чтобы осуществить работу связанных с ними функций.</p>
+                    <h2>Срок хранения данных</h2>
+                    <p>Все данные хранятся до тех пор, пока бот находиться на сервере, как только пользователь удаляет бота с сервера, все связанные с этим сервером данные стираются.</p>
+                    <h2>Данные, которые собираются автоматически</h2>
+                    <p>Эти данные собираются автоматически при добавлении бота или при использовании его команд.</p>
+                    <ul>
+                        <li>Идентификатор сервера</li>
+                        <li>Идентификатор пользователя</li>
+                        <li>Идентификатор роли/ролей, которые вы указали при вызове команды</li>
+                        <li>Метка времени</li>
+                    </ul>
+                    <h2>Связаться с нами</h2>
+                    <p>По всем вопросам вы можете писать на наш <a href="https://discord.gg/JE2XQJ4Jan">сервер поддержки</a>, также вы можете связаться с нами по email, по адресу <a href="mailto:s1r0k.dev@gmail.com">s1r0k.dev@gmail.com</a> или напрямую через дискорд, написав пользователю <span>s1rok#4841</span></p>
+                    <h2>Запрос на удаление или копирования данных</h2>
+                    <p>Вы можете обратиться на наш <a href="https://discord.gg/JE2XQJ4Jan">сервер поддержки</a> с просьбой дампа данных сервера на котором вы являетесь владельцем или дампа ваших личных данных, в таком случае мы сохраним и предоставим вам ваши данные.</p>
+                    <p>Вы также можете запросить удаление данных, как частичный(например сброс экономики), так и полное удаление данных, в последнем случае бот выйдет с вашего сервера, и мы удалим все связанные с вами и с вашим сервером данные.</p>
+                    <blockquote>Если вы запросите полное удаление данных, вы больше не сможете использовать бота ни на одном сервере, также бот автоматически выйдет с вашего сервера</blockquote>
+                    <blockquote>Только владелец сервера может запросить удаление данных сервера</blockquote>
+                    <blockquote>Если вы не знаете, где найти идентификатор, ознакомьтесь с <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-">этой статьёй</a></blockquote>
+                    <br>
+                    <br>
+                </div>
+                <div class="info">
+
+                </div>
             </div>
         </div>
+    </div>
+    <button class="up" id="up" onclick="up()">
+        <img src="assets/icons/right-arrow.png" alt="up">
+    </button>
+</div>
+<div class="cookie">
+    <div class="cookie_content">
+        <img id="cookie_png" src="assets/icons/cookie@2x.png">
+        <p>Мы используем файлы cookie, чтобы обеспечить правильную работу нашего веб-сайта, персонализировать материалы и анализировать сетевой трафик</p>
+    </div>
+    <div class="cookie_btns">
+        <button role="button"><span>Хорошо</span></button>
+        <button role="link"><span>Подробнее</span></button>
     </div>
 </div>
 <div class="footer" id="footer">
@@ -147,9 +218,9 @@
             </div>
             <div>
                 <ul>
-                <li><a href="https://s1rok1.gitbook.io/memories/dopolnitelnaya-informaciya/usloviya-obsluzhivaniya-terms-of-service">Условия использования</a></li>
-                <li><a href="https://s1rok1.gitbook.io/memories/dopolnitelnaya-informaciya/politika-konfidencialnosti-privacy-policy">Конфиденциальность</a></li>
-                <li><a href="https://github.com/sirok1">Я на  Github</a></li>
+                    <li><a id="link_terms_of_service" onclick="terms_of_service()">Условия использования</a></li>
+                    <li><a id="privacy_link" onclick="privacy()">Конфиденциальность</a></li>
+                    <li><a href="https://github.com/sirok1">Я на  Github</a></li>
                 </ul>
             </div>
 
